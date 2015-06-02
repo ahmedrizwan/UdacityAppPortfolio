@@ -26,16 +26,16 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="25sp"
+                android:layout_margin="@dimen/margin_title"
                 android:gravity="center"
                 android:text="@string/my_nano_degree_title"
-                android:textSize="25sp"
+                android:textSize="@dimen/title_textview"
                 android:textStyle="bold"/>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10sp"
+                android:layout_margin="@dimen/margin_buttons"
                 android:background="@color/colorPrimary">
 
                 <Button
@@ -44,14 +44,14 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:text="@string/spotify_streamer"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/textsize_buttons"
                     />
             </FrameLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10sp"
+                android:layout_margin="@dimen/margin_buttons"
                 android:background="@color/colorPrimary">
 
                 <Button
@@ -60,14 +60,14 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:text="@string/scores_app"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/textsize_buttons"
                     />
             </FrameLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10sp"
+                android:layout_margin="@dimen/margin_buttons"
                 android:background="@color/colorPrimary">
 
                 <Button
@@ -76,13 +76,13 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:text="@string/library_app"
-                    android:textSize="18sp"/>
+                    android:textSize="@dimen/textsize_buttons"/>
             </FrameLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10sp"
+                android:layout_margin="@dimen/margin_buttons"
                 android:background="@color/colorPrimary">
 
                 <Button
@@ -91,13 +91,13 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:text="@string/build_it_bigger"
-                    android:textSize="18sp"/>
+                    android:textSize="@dimen/textsize_buttons"/>
             </FrameLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10sp"
+                android:layout_margin="@dimen/margin_buttons"
                 android:background="@color/colorPrimary">
 
                 <Button
@@ -106,13 +106,13 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:text="@string/xyz_reader"
-                    android:textSize="18sp"/>
+                    android:textSize="@dimen/textsize_buttons"/>
             </FrameLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10sp"
+                android:layout_margin="@dimen/margin_buttons"
                 android:background="@color/colorAccent">
 
                 <Button
@@ -121,7 +121,7 @@
                     android:layout_height="wrap_content"
                     android:background="?attr/selectableItemBackground"
                     android:text="@string/my_app"
-                    android:textSize="18sp"/>
+                    android:textSize="@dimen/textsize_buttons"/>
             </FrameLayout>
 
         </LinearLayout>

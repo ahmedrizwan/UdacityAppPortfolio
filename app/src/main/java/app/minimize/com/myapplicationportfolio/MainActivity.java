@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    Toast mToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,27 +54,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(final View view) {
         switch (view.getId()){
             case R.id.buttonSpotifyStreamer:
-                showToast("This will launch Spotify App!");
+                showToast(getResources().getString(R.string.launch_spotify));
                 break;
             case R.id.buttonScoresApp:
-                showToast("This will launch Scores App!");
+                showToast(getResources().getString(R.string.launch_scores));
                 break;
             case R.id.buttonLibraryApp:
-                showToast("This will launch Library App!");
+                showToast(getResources().getString(R.string.launch_library));
                 break;
             case R.id.buttonBuildItBigger:
-                showToast("This will launch Build it Bigger App!");
+                showToast(getResources().getString(R.string.launch_bigger));
                 break;
             case R.id.buttonXyzReader:
-                showToast("This will launch XYZ Reader App!");
+                showToast(getResources().getString(R.string.launch_reader));
                 break;
             case R.id.buttonMyApp:
-                showToast("This will launch my App!");
+                showToast(getResources().getString(R.string.launch_app));
                 break;
         }
     }
 
     private void showToast(final String message) {
-        Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
+        if(mToast!=null)
+            mToast.cancel();
+
+        mToast = Toast.makeText(this,message,Toast.LENGTH_SHORT);
+        mToast.show();
     }
 }

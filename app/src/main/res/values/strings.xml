@@ -10,4 +10,11 @@
     <string name="build_it_bigger">Build it Bigger</string>
     <string name="xyz_reader">XYZ Reader</string>
     <string name="my_app">Capstone: My App</string>
+
+    <string name="launch_spotify">This will launch Spotify App!</string>
+    <string name="launch_scores">This will launch Scores App!</string>
+    <string name="launch_library">This will launch Library App!</string>
+    <string name="launch_bigger">This will launch Build it Bigger App!</string>
+    <string name="launch_reader">This will launch XYZ Reader App!</string>
+    <string name="launch_app">This will launch my App!</string>
 </resources>
